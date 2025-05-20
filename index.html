@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="javascript/index.js" defer></script>
+    <title>Accused</title>
+</head>
+<body>
+    <section class="uitleg">
+        <h1>ACCUSED,</h1>
+
+        <section class="uitlegTekst">
+        <h2>DO YOU KNOW HOW TO PLAY?</h2>
+        <p>Solve this puzzle and learn all the skills to become a legendary detective. First flip the cards below. Go through the clues one at a time and deduce the Who, What and Where. 
+            TIP! If you need some help try drawing out a little grid to make your deductions clearer and easier to understand.
+            <br>
+            <br>
+            On a rainy Tuesday afternoon, a body is found. The victim is a well-known teacher from a famous school. No one saw anything, but there are three suspects who were on the premises that afternoon: Miss Scarlet, Madame Yellow and Mr Black. 
+            Every suspect brought 1 weapon to 1 location, but only one was a murderer!
+        </p>
+        </section>
+    </section>
+
+    <section class="verdachten" class="verbergVerdachten">
+        <h2>THE SUSPECTS</h2>
+    
+        <img id="verdacht1" src="images/Card.png" alt="Verdachte 1, Miss Scarlet">
+        <img id="verdacht2" src="images/Card.png" alt="Verdachte 2, Madame Yellow">
+        <img id="verdacht3" src="images/Card.png" alt="Verdachte 3, Mr. Black">
+    </section>
+
+    <section class="wapens" class="verbergWapens">
+        <h2>THE WEAPONS</h2>
+
+        <img id="wapen1" src="images/Card.png" alt="Wapen 1, The Gun">
+        <img id="wapen2" src="images/Card.png" alt="Wapen 2, An Pencil">
+        <img id="wapen3" src="images/Card.png" alt="Wapen 3, The Pineapple">
+    </section>
+
+    <section class="locaties" class="verbergLocaties">
+        <h2>THE LOCATIONS</h2>
+
+        <img id="locatie1" src="images/Card.png" alt="Locatie 1, The Schoolgarden">
+        <img id="locatie2" src="images/Card.png" alt="Locatie 2, The Cafe">
+        <img id="locatie3" src="images/Card.png" alt="Locatie 3, The Library">
+    </section>
+
+    <section id="nav">
+        <p id="nav-verdacht">SUSPECTS</p>
+        <img src="images/listdecor2.png" alt="">
+        <p id="nav-wapen">WEAPONS</p>
+        <img src="images/listdecor2.png" alt="">
+        <p id="nav-locatie">LOCATIONS</p>
+    </section>
+
+    <section class="hintSectie">
+        <h2>CLUES</h2>
+        <ul id="hints">
+            <li>The person with the pineapple was seen in the schoolgarden.</li>
+            <li>Mr. Black was not in the schoolgarden.</li>
+            <li>The one with the pencil is not Madame Jeanette.</li>
+            <li>Miss Saffron was carrying what appeared to be a gun.</li>
+            <li>The murder was not committed with the weapon that was in the cafe.</li>
+            <li>Madame Jeanette was not in the café.</li>
+            <li>The gun was not in the library.</li>
+            <li>The person in the cafe was not the murderer.</li>
+            <li>An anonymous informant gave you a piece of paper with the following clue on it: “ehT nopaew that saw desu gnirud eht redrum saw a elppaenip!”</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>MAKE YOUR ACCUSATION!</h2>
+        <p id="beschuldigP">Who, with what and where was the murder committed? Do you have the answer yet?</p>
+<section class="beschuldigOpmaak">
+        <label for="wie">Who is the killer?</label>
+        <select name="wie" id="wie">
+            <option value="verdachten1.png">Miss Saffron</option>
+            <option value="verdachten2.png">Madame Jeanette</option>
+            <option value="verdachten3.png">Mr. Black</option>
+        </select>
+
+        <label for="wat">With what weapon was the murder committed?</label>
+        <select name="wat" id="wat">
+            <option value="wapen1.png">The Gun</option>
+            <option value="wapen2.png">The Pencil</option>
+            <option value="wapen3.png">Pineapple</option>
+        </select>
+
+        <label for="waar">Where was the victim murdered?</label>
+        <select name="waar" id="waar">
+            <option value="locatie1.png">The Schoolgarden</option>
+            <option value="locatie2.png">The Cafe</option>
+            <option value="locatie3.png">The Library</option>
+        </select>
+        <br><br>
+</section>
+        <button id="button">ACCUSE!</button>
+    </section>
+
+
+    <section id="beschuldiging" class="verbergBeschuldiging">
+        <h2 id="beschuldigingH2">WHO WAS THE REAL CULPRIT?</h2>
+        <p id="resultaat"></p>
+        
+        <section  class="beschuldigingOpmaak">
+            <section>
+                <p><strong>Wie:</strong></p>
+                <img id="imgWie" src="" alt="Wie">
+            </section>   
+            
+            <section>
+                <p><strong>Wat:</strong></p>
+                <img id="imgWat" src="" alt="Wat">
+            </section>    
+
+            <section>
+                <p><strong>Waar:</strong></p>
+                <img id="imgWaar" src="" alt="Waar">
+            </section>
+        </section>
+    </section>
+</body>
+</html>
