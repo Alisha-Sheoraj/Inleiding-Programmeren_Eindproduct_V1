@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image:url("images/bkg3.jpg");
+    background-image:url("/images/bkg3.jpg");
     position: absolute;
     background-attachment: fixed;
     background-size: cover;
@@ -92,7 +92,7 @@ h2 {
 heb aangegevn veranderd van wat er hierboven staat naar van er in de @media tag staat.*/
 @media (max-width: 700px) {
   body{
-    background-image:url("images/bkg4.jpg");
+    background-image:url("/images/bkg4.jpg");
   }
   .uitleg{
     padding: 0;
